@@ -1,13 +1,13 @@
 name: Synchronize private files
 
 on:
-#  push:
-#    branches:
-#      - master,main
   workflow_dispatch:  # Allows manual triggering
+  push:
+    branches:
+      - master,main
 
 jobs:
-  update-citations:
+  sycnhronize-private:
     runs-on: ubuntu-latest
 
     permissions:
