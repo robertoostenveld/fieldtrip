@@ -32,7 +32,7 @@ jobs:
       - name: Find suggested tests
         id: find-tests
         run: |
-          python .github/scripts/suggest_tests.py ${{ steps.changed-files.outputs.all_changed_files }} > ./comment
+          python .github/scripts/suggest-tests.py ${{ steps.changed-files.outputs.all_changed_files }} > ./comment
 
       - name: Are there any suggested tests?
         id: any-tests
